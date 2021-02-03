@@ -73,7 +73,7 @@ const navStyles = makeStyles((theme) => ({
     alignItems: 'center',
     [theme.breakpoints.down('md')]: {
       width: '50%',
-      marginLeft: '.4rem',
+      marginLeft: '4rem',
     },
     '@media (max-width: 758px)': {
       display: 'none',
@@ -81,9 +81,9 @@ const navStyles = makeStyles((theme) => ({
   },
   search: {
     width: '50%',
-    padding: '.3rem 1rem',
+    padding: '.3rem 1rem .3rem 4rem',
     borderRadius: '1.2rem',
-    // border: '1px solid grey',
+    marginLeft: '-3rem',
     transition: 'all .31s ease',
     color: theme.palette.grey[600],
     fontWeight: '400',
@@ -114,10 +114,7 @@ const navStyles = makeStyles((theme) => ({
     },
   },
   searchIcon: {
-    marginLeft: '-3rem',
-    '@media (max-width: 758px)': {
-      display: 'none',
-    },
+    zIndex: 400,
   },
   icon: {
     color: '#000000',

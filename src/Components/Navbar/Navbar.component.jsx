@@ -33,8 +33,8 @@ const Navbar = () => {
                         <Typography className={classes.title} variant="h1">FindInterest</Typography>
                     </div>
                     <form className={classes.searchForm}>
-                        <input className={classes.search} type="search" name="search" id="search" placeholder="Search..."/>
                         <SearchIcon style={{ color: grey[600] }} className={`${classes.searchIcon} ${classes.navIcon}`}/>
+                        <input className={classes.search} type="search" name="search" id="search" placeholder="Search..."/>
                     </form>
                     <ul className={classes.navList}>
                         <li className={classes.navListItem}>

@@ -1,11 +1,28 @@
 import React from 'react'
+import heroStyles from './Hero.styles';
+import Typography from '@material-ui/core/Typography';
+import Button from '@material-ui/core/Button';
+import SearchIcon from '@material-ui/icons/Search';
+import { grey } from '@material-ui/core/colors';
+
+
 
 const Hero = () => {
+    const classes = heroStyles();
     return (
-        <div>
-            <h2>Hero hello</h2>
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Reiciendis ipsum temporibus repellendus, laborum sequi odit laudantium. Ut nesciunt sed quae aut nam, officia, quo hic ducimus facilis ex, nihil non tempore deleniti nobis qui dolores tempora distinctio eligendi magnam cupiditate eius ullam. Dolores quam, aperiam accusantium obcaecati dignissimos adipisci reprehenderit harum, molestiae quisquam voluptatum illum recusandae quaerat magni veniam laudantium corporis, incidunt doloribus voluptas ad beatae. Quidem impedit magnam molestias dolores deserunt fugiat doloribus eaque harum est odit quisquam enim optio quam doloremque, voluptate ducimus, unde voluptates error! Facilis, tempora.
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Saepe veniam corrupti similique consectetur consequatur pariatur soluta, aspernatur laboriosam quod quibusdam possimus provident non ab impedit nihil. Veniam dolorum minima ut! Quas vitae eos necessitatibus ipsam unde! Dicta voluptate animi, consequuntur quaerat blanditiis eveniet maxime incidunt provident culpa repellat sequi neque! Cumque veritatis molestiae consectetur quos blanditiis, magnam adipisci ex id modi esse, provident vel rerum minus, saepe enim. Iusto ut aspernatur necessitatibus molestias, sequi cumque deleniti recusandae qui! Rem in repudiandae assumenda ullam iste impedit saepe alias enim eligendi. Modi.
+        <div className={classes.root}>
+            <Typography className={classes.title} variant="h1" component="h1">What's Interesting to you?</Typography>
+            <Typography className={classes.subTitle} variant="h6" component="h6">Find it here!</Typography>
+            <form className={classes.form}>
+                <SearchIcon className={classes.searchIcon} style={{ color: grey[600] }} />
+                <input className={classes.search} type="search" name="search" id="search" placeholder="Search over 1200 topics..."/>
+                <Button type="submit" className={classes.searchBtn} variant="contained" color="primary">
+                    Search
+                </Button>
+            </form>
+            <div className={classes.btnContainer}>
+                <Button className={classes.btn} variant="outlined" href="#popular"> Popular Interests </Button>
+            </div>
         </div>
     )
 }
