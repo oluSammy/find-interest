@@ -5,6 +5,9 @@ const homeStyles = makeStyles((theme) => ({
     flexGrow: 1,
     scrollBehavior: 'smooth'
   },
+  space: {
+    marginTop: '5rem'
+  }
 }));
 
 export default homeStyles;

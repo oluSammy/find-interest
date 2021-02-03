@@ -5,8 +5,9 @@ const navStyles = makeStyles((theme) => ({
     flexGrow: 1,
   },
   appBarStyles: {
-    backgroundColor: 'transparent',
-    color: '#000000',
+    backgroundColor: '#1a237e',
+    // opacity: '.8',
+    color: theme.palette.common.white,
     boxShadow: 'none',
     // boxShadow: '0px 1px 3px 1px rgba(0,0,0,0.57)',
   },
@@ -33,7 +34,8 @@ const navStyles = makeStyles((theme) => ({
   },
   logo: {
     marginRight: '4rem',
-    fontSize: '1.6rem',
+    fontSize: '1.4rem',
+    fontWeight: 500,
     [theme.breakpoints.down('md')]: {
       marginRight: '2rem',
     },
@@ -46,10 +48,11 @@ const navStyles = makeStyles((theme) => ({
     },
   },
   title: {
-    fontSize: '1.82rem',
+    fontSize: '1.7rem',
+    fontWeight: 500,
     fontFamily: 'Sofia',
     marginRight: '3rem',
-    color: theme.palette.grey[600],
+    color: theme.palette.common.white,
     [theme.breakpoints.down('md')]: {
       marginRight: '1rem',
       fontSize: '1.5rem',
@@ -78,12 +81,13 @@ const navStyles = makeStyles((theme) => ({
   },
   search: {
     width: '50%',
-    padding: '.7rem .7rem',
+    padding: '.3rem 1rem',
     borderRadius: '1.2rem',
     // border: '1px solid grey',
     transition: 'all .31s ease',
     color: theme.palette.grey[600],
-    fontWeight: '300',
+    fontWeight: '400',
+    fontSize: '1.3rem',
     fontFamily: 'EB Garamond',
     boxShadow: '0px 1px 11px 0px rgba(171,158,158,0.57)',
     border: 'none',
@@ -115,6 +119,9 @@ const navStyles = makeStyles((theme) => ({
       display: 'none',
     },
   },
+  icon: {
+    color: '#000000',
+  },
   navList: {
     display: 'flex',
     alignItems: 'center',
@@ -127,10 +134,10 @@ const navStyles = makeStyles((theme) => ({
     },
   },
   navIcon: {
-    color: theme.palette.grey[800],
+    color: theme.palette.common.white,
   },
   navBtn: {
-    color: theme.palette.grey[600],
+    color: theme.palette.common.white,
     whiteSpace: 'nowrap',
     fontSize: '1rem',
     [theme.breakpoints.down('md')]: {
