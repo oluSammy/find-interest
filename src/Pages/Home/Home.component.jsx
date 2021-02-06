@@ -3,6 +3,7 @@ import homeStyles from './home.styles';
 import Navbar from './../../Components/Navbar/Navbar.component';
 import Hero from './../../Components/Hero/Hero.component';
 import Popular from './../../Components/Popular/Popular.component';
+import Footer from './../../Components/Footer/Footer.components';
 
 const Home = () => {
     const classes = homeStyles()
@@ -12,6 +13,7 @@ const Home = () => {
             <div className={classes.space} />
             <Hero />
             <Popular />
+            <Footer />
         </div>
     )
 }
