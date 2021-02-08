@@ -36,6 +36,8 @@ const navStyles = makeStyles((theme) => ({
     marginRight: '4rem',
     fontSize: '1.4rem',
     fontWeight: 500,
+    color: theme.palette.common.white,
+    textDecoration: 'none',
     [theme.breakpoints.down('md')]: {
       marginRight: '2rem',
     },
@@ -44,7 +46,7 @@ const navStyles = makeStyles((theme) => ({
       fontSize: '1.1rem',
     },
     '@media (max-width: 387px)': {
-      fontSize: '.8rem'
+      fontSize: '.8rem',
     },
   },
   title: {
@@ -62,7 +64,7 @@ const navStyles = makeStyles((theme) => ({
       marginRight: 'auto',
     },
     '@media (max-width: 387px)': {
-      fontSize: '.9rem'
+      fontSize: '.9rem',
     },
   },
   searchForm: {

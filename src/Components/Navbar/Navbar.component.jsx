@@ -9,6 +9,8 @@ import ExitToAppIcon from '@material-ui/icons/ExitToApp';
 import Button from '@material-ui/core/Button';
 import { Slide, useScrollTrigger } from "@material-ui/core";
 import { grey } from '@material-ui/core/colors';
+import { Link } from 'react-router-dom';
+
 
 
 
@@ -29,7 +31,7 @@ const Navbar = () => {
             <AppBar className={classes.appBarStyles}>
                 <Toolbar className={classes.toolbarStyles}>
                     <div className={classes.titleBox}>
-                        <h2 className={classes.logo}>LOGO</h2>
+                        <Link to="/" className={classes.logo}>Logo</Link>
                         <Typography className={classes.title} variant="h1">FindInterest</Typography>
                     </div>
                     <form className={classes.searchForm}>
@@ -38,7 +40,7 @@ const Navbar = () => {
                     </form>
                     <ul className={classes.navList}>
                         <li className={classes.navListItem}>
-                            <Button className={classes.navBtn} startIcon={<ExitToAppIcon />}>Sign Up</Button>
+                            <Button component={Link} to={'/signup'} className={classes.navBtn} startIcon={<ExitToAppIcon />}>Sign Up</Button>
                         </li>
                         <li className={classes.navListItem}>
                             <Button className={classes.navBtn} startIcon={<LockOpenIcon />}>Login</Button>
