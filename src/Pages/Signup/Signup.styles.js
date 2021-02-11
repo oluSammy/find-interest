@@ -13,6 +13,15 @@ const signupStyles = makeStyles((theme) => ({
   },
   gridContainer: {
     padding: '0px 100px',
+    '@media (max-width: 1180px)': {
+      padding: '0px 30px',
+    },
+    '@media (max-width: 768px)': {
+      padding: '30px 30px',
+    },
+    '@media (max-width: 888px)': {
+      padding: '30px 5px',
+    },
   },
   signupImgContainer: {
     width: '100%',
@@ -34,12 +43,19 @@ const signupStyles = makeStyles((theme) => ({
   signupBox: {
     width: '90%',
     margin: '0 auto',
+    '@media (max-width: 888px)': {
+      width: '100%',
+    },
   },
   title: {
     fontSize: '30px',
     fontWeight: 700,
     textAlign: 'center',
     marginBottom: '10px',
+    [theme.breakpoints.down('sm')]: {
+      fontSize: '20px',
+      fontWeight: 600,
+    },
   },
   subtitle: {
     textAlign: 'center',
@@ -53,6 +69,9 @@ const signupStyles = makeStyles((theme) => ({
     width: '70%',
     margin: '0 auto',
     marginBottom: '9px',
+    '@media (max-width: 888px)': {
+      width: '85%',
+    },
   },
   already: {
     textAlign: 'center',
@@ -64,6 +83,9 @@ const signupStyles = makeStyles((theme) => ({
   inputIcon: {
     fontSize: '15px',
     color: theme.palette.primary.main,
+  },
+  login: {
+    marginLeft: '10px',
   },
 }));
 

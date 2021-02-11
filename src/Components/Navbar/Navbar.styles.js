@@ -21,9 +21,6 @@ const navStyles = makeStyles((theme) => ({
     [theme.breakpoints.down('sm')]: {
       padding: '0 2vw 0 2vw',
     },
-    [theme.breakpoints.down('xs')]: {
-      padding: '0 1vw 0 1vw',
-    },
   },
   titleBox: {
     display: 'flex',

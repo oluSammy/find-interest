@@ -16,7 +16,7 @@ const Footer = () => {
             <Grid container justify="space-between" className={classes.footerTop}>
                 <Grid xs={12} sm={6} md={3} item className={classes.titleContainer}>
                     <p>LOGO</p>
-                    <Typography className={classes.footerTitle} variant="h1" component="h1">Find Interest</Typography>
+                    <Typography className={classes.footerTitle} variant="h1" component="h1">FindInterest</Typography>
                 </Grid>
                 <Grid xs={12} sm={6} md={6} container item  justify="space-evenly">
                     <Button className={classes.footerBtn}>Interests</Button>

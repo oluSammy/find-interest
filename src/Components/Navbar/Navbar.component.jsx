@@ -43,7 +43,7 @@ const Navbar = () => {
                             <Button component={Link} to={'/signup'} className={classes.navBtn} startIcon={<ExitToAppIcon />}>Sign Up</Button>
                         </li>
                         <li className={classes.navListItem}>
-                            <Button className={classes.navBtn} startIcon={<LockOpenIcon />}>Login</Button>
+                            <Button component={Link} to={'/login'} className={classes.navBtn} startIcon={<LockOpenIcon />}>Login</Button>
                         </li>
                     </ul>
                 </Toolbar>

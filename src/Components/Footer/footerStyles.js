@@ -6,14 +6,34 @@ const footerStyles = makeStyles((theme) => ({
     minHeight: '50vh',
     padding: '50px 100px',
     color: theme.palette.common.white,
+    '@media (max-width: 800px)': {
+      padding: '50px 40px',
+    },
+
+    '@media (max-width: 662px)': {
+      padding: '50px 20px',
+    },
+
+    '@media (max-width: 366px)': {
+      padding: '50px 5px',
+    },
   },
   titleContainer: {
     display: 'flex',
     alignItems: 'center',
+    justifyContent: 'left',
+
+    '@media (max-width: 599px)': {
+      justifyContent: 'center'
+    },
   },
   logoContainer: {},
   footerTop: {
-    marginBottom: '100px',
+    marginBottom: '80px',
+
+  '@media (max-width: 599px)': {
+    marginBottom: '50px',
+  },
   },
   footerLogo: {
     // height: '100%',
@@ -36,6 +56,9 @@ const footerStyles = makeStyles((theme) => ({
     marginBottom: '50px',
     display: 'flex',
     alignItems: 'center',
+    '@media (max-width: 472px)': {
+      width: '100%',
+    },
   },
   footerInput: {
     width: '90%',
